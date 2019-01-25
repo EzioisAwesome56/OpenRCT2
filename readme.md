@@ -3,5 +3,5 @@ This build of openrct2 is not made for general usage on all platforms, instead o
 
 Quality is not to be expected<br>
 ## Current Additions
-[x] Mute button now opens chat
+[x] Mute button now opens chat<br>
 [x] Moved build and path buttons to the left side of the screen
