@@ -2089,7 +2089,8 @@ STR_2753    :Mowed grass
 STR_2754    :Water plants
 STR_2755    :Fix vandalism
 STR_2756    :Remove litter
-STR_2763    :???
+# Stolen for some tooltip
+STR_2763    :BEANS
 STR_2765    :Large Tram
 STR_2766    :Win scenario
 STR_2767    :Freeze weather

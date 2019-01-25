@@ -82,6 +82,9 @@ enum {
     WIDX_NETWORK,
 
     WIDX_SEPARATOR,
+	
+	// TEST: add a new button
+	WIDX_TEEST,
 };
 
 validate_global_widx(WC_TOP_TOOLBAR, WIDX_PAUSE);
@@ -162,6 +165,7 @@ enum {
 
 // from left to right
 static constexpr const int32_t left_aligned_widgets_order[] = {
+	WIDX_TEEST,
 	WIDX_FILE_MENU,
 	WIDX_PATH,
 	WIDX_CONSTRUCT_RIDE,
@@ -230,7 +234,8 @@ static rct_widget window_top_toolbar_widgets[] = {
     { WWT_TRNBTN,   0,  0x001E, 0x003B, 0,                      TOP_TOOLBAR_HEIGHT,     IMAGE_TYPE_REMAP | SPR_TAB_TOOLBAR,               STR_SHOW_MULTIPLAYER_STATUS_TIP },  // Network
 
     { WWT_EMPTY,    0,  0,      10-1,   0,                      0,                      0xFFFFFFFF,                                 STR_NONE },                         // Artificial widget separator
-    { WIDGETS_END },
+    { WWT_TRNBTN,   0,  0x010B, 0x0128, 0,                      TOP_TOOLBAR_HEIGHT,     IMAGE_TYPE_REMAP | SPR_TOOLBAR_LAND,              STR_EZIO_BUTTON },              // test button
+	{ WIDGETS_END },
 };
 
 static void window_top_toolbar_mouseup(rct_window *w, rct_widgetindex widgetIndex);
