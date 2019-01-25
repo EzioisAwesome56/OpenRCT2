@@ -6,4 +6,5 @@ Quality is not to be expected<br>
 Generally speaking, this wont be 100% up to date with develop, unless a new network code version is released. Since this was made with multiplayer in mind, updates shall be released then with the new network stuff.<br>
 ## Current Additions
 [x] Mute button now opens chat<br>
-[x] Moved build and path buttons to the left side of the screen
+[x] Moved build and path buttons to the left side of the screen<br>
+[x] Made news button into close all windows
