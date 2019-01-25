@@ -19,6 +19,7 @@
 #include <openrct2-ui/interface/Widget.h>
 #include <openrct2-ui/windows/Window.h>
 #include <openrct2/Cheats.h>
+#include <openrct2/interface/Chat.h>
 #include <openrct2/Context.h>
 #include <openrct2/Editor.h>
 #include <openrct2/Game.h>
@@ -387,7 +388,7 @@ static void window_top_toolbar_mouseup(rct_window* w, rct_widgetindex widgetInde
             context_open_window(WC_RECENT_NEWS);
             break;
         case WIDX_MUTE:
-            audio_toggle_all_sounds();
+            chat_toggle();
             break;
     }
 }
