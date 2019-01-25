@@ -31,6 +31,7 @@
 #include <openrct2/config/Config.h>
 #include <openrct2/interface/InteractiveConsole.h>
 #include <openrct2/interface/Screenshot.h>
+#include <openrct2/interface/Window.h>
 #include <openrct2/network/network.h>
 #include <openrct2/network/twitch.h>
 #include <openrct2/paint/VirtualFloor.h>
@@ -165,11 +166,11 @@ static constexpr const int32_t left_aligned_widgets_order[] = {
 	WIDX_PATH,
 	WIDX_CONSTRUCT_RIDE,
     WIDX_MUTE,
+	WIDX_NEWS,
     WIDX_NETWORK,
     WIDX_CHEATS,
-    WIDX_DEBUG,
 
-    WIDX_SEPARATOR,
+    //WIDX_SEPARATOR,
 
     WIDX_ZOOM_OUT,
     WIDX_ZOOM_IN,
@@ -181,7 +182,6 @@ static constexpr const int32_t left_aligned_widgets_order[] = {
 
 // from right to left
 static constexpr const int32_t right_aligned_widgets_order[] = {
-    WIDX_NEWS,
     WIDX_GUESTS,
     WIDX_STAFF,
     WIDX_PARK,
@@ -196,7 +196,8 @@ static constexpr const int32_t right_aligned_widgets_order[] = {
     WIDX_SCENERY,
     WIDX_WATER,
     WIDX_LAND,
-    WIDX_CLEAR_SCENERY
+    WIDX_CLEAR_SCENERY,
+	WIDX_DEBUG
 };
 
 #pragma endregion
@@ -385,7 +386,7 @@ static void window_top_toolbar_mouseup(rct_window* w, rct_widgetindex widgetInde
             context_open_window(WC_RESEARCH);
             break;
         case WIDX_NEWS:
-            context_open_window(WC_RECENT_NEWS);
+            window_close_all();
             break;
         case WIDX_MUTE:
             chat_toggle();
