@@ -161,9 +161,9 @@ enum {
 
 // from left to right
 static constexpr const int32_t left_aligned_widgets_order[] = {
-    WIDX_PAUSE,
-    WIDX_FASTFORWARD,
-    WIDX_FILE_MENU,
+	WIDX_FILE_MENU,
+	WIDX_PATH,
+	WIDX_CONSTRUCT_RIDE,
     WIDX_MUTE,
     WIDX_NETWORK,
     WIDX_CHEATS,
@@ -191,8 +191,8 @@ static constexpr const int32_t right_aligned_widgets_order[] = {
 
     WIDX_SEPARATOR,
 
-    WIDX_CONSTRUCT_RIDE,
-    WIDX_PATH,
+    WIDX_FASTFORWARD,
+    WIDX_PAUSE,
     WIDX_SCENERY,
     WIDX_WATER,
     WIDX_LAND,
