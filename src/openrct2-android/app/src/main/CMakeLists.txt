@@ -53,7 +53,7 @@ ExternalProject_Add(libs
 
 add_custom_command(TARGET libs POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}
-    COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_BINARY_DIR}/libs/lib/*.so" ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/libs/lib/*.so" ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}
 )
 
 add_library(freetype SHARED IMPORTED)
@@ -126,6 +126,7 @@ add_dependencies(crypto libs)
 include_directories("${CMAKE_BINARY_DIR}/libs/include")
 include_directories("${CMAKE_BINARY_DIR}/libs/include/freetype2")
 include_directories("${CMAKE_BINARY_DIR}/libs/include/SDL2")
+include_directories("C:/Android/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24")
 
 # now build app's shared lib
 include_directories(./ndk_helper
