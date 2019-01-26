@@ -327,6 +327,7 @@ rct_window* window_top_toolbar_open()
 
     return window;
 }
+
 // function to open the second toolbar
 rct_window* window_second_toolbar_open(rct_widget* dank)
 {
@@ -410,6 +411,9 @@ static void window_top_toolbar_mouseup(rct_window* w, rct_widgetindex widgetInde
         case WIDX_MUTE:
             chat_toggle();
             break;
+		case WIDX_EXTRA_STUFF:
+			window_second_toolbar_open(window_top_toolbar_widgets);
+			break;
     }
 }
 
