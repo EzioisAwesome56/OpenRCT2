@@ -410,9 +410,6 @@ static void window_top_toolbar_mouseup(rct_window* w, rct_widgetindex widgetInde
         case WIDX_MUTE:
             chat_toggle();
             break;
-		case WIDX_EXTRA_STUFF:
-			chat_tootle();
-			break;
     }
 }
 
