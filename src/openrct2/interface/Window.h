@@ -351,6 +351,7 @@ enum
     WC_MAIN_WINDOW = 0,
     WC_TOP_TOOLBAR = 1,
     WC_BOTTOM_TOOLBAR = 2,
+	WC_SECOND_TOOLBAR = 3,
     WC_TOOLTIP = 5,
     WC_DROPDOWN = 6,
     WC_ABOUT = 8,
