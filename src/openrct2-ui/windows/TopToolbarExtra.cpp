@@ -55,3 +55,12 @@ enum {
 validate_global_widx(WC_TOP_TOOLBAR, WIDX_LAND);
 validate_global_widx(WC_TOP_TOOLBAR, WIDX_WATER);
 validate_global_widx(WC_TOP_TOOLBAR, WIDX_SCENERY);
+
+#pragma region Toolbar_widget_ordering
+
+// from left to right
+static constexpr const int32_t left_aligned_widgets_order[] = {
+	WIDX_LAND,
+	WIDX_WATER,
+	WIDX_SCENERY,
+};
