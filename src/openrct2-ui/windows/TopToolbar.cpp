@@ -169,7 +169,7 @@ enum {
 static constexpr const int32_t left_aligned_widgets_order[] = {
 	WIDX_FILE_MENU,
 	WIDX_PATH,
-	WIDX_EXTRA_STUFF
+	WIDX_EXTRA_STUFF,
 	WIDX_CONSTRUCT_RIDE,
     WIDX_MUTE,
 	WIDX_NEWS,
