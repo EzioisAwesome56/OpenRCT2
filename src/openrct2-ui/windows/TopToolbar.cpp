@@ -331,7 +331,7 @@ rct_window* window_top_toolbar_open()
 rct_window* window_second_toolbar_open(rct_widget* dank)
 {
 	rct_window* window = window_create(
-		0, TOP_TOOLBAR_HEIGHT + 1, context_get_width(), TOP_TOOLBAR_HEIGHT + 1, &window_top_toolbar_events, WC_SECOND_TOOLBAR,
+		0, TOP_TOOLBAR_HEIGHT, context_get_width(), TOP_TOOLBAR_HEIGHT + 1, &window_top_toolbar_events, WC_SECOND_TOOLBAR,
 		WF_STICK_TO_FRONT | WF_TRANSPARENT | WF_NO_BACKGROUND);
 	window->widgets = dank;
 	
