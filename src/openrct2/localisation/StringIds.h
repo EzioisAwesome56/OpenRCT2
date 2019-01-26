@@ -2167,7 +2167,7 @@ enum
     // STR_CHEAT_5K_MONEY = 2760, // <removed string - do not use>
     // STR_2761    :<removed string - do not use>
     // STR_2762    :<removed string - do not use>
-    STR_EZIO_BUTTON = 2763,
+    STR_EXTRA_STUFF = 2763,
     // STR_2764    :<removed string - do not use>
     STR_CHEAT_LARGE_TRAM_GUESTS = 2765,
     STR_CHEAT_WIN_SCENARIO = 2766,
